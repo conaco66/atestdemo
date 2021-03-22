@@ -69,6 +69,7 @@ android {
 
     Properties properties = new Properties()
     def propertiesFile = file("../local.properties")
+    ndkVersion '22.0.7026061'
     if (propertiesFile.exists()) {
         properties.load(propertiesFile.newDataInputStream())
     }
